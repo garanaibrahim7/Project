@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2024 at 10:10 AM
+-- Generation Time: Feb 17, 2024 at 05:54 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -90,8 +90,18 @@ CREATE TABLE `cars` (
 --
 
 INSERT INTO `cars` (`id`, `name`, `fuel`, `capacity`, `rent`, `available`, `image`) VALUES
-(1, 'Porsche', 'Desiel', 2, 25000, 'YES', 'images/porsche.jpg'),
-(2, 'Ferrari', 'Diesel', 2, 40000, 'YES', 'images/ferrari.jpg');
+(2, 'Mahindra Thar 4x4', 'Diesel', 5, 5000, 'YES', 'images/thar.jpg'),
+(3, 'BMW X7', 'Petrol', 6, 15000, 'YES', 'images/bmw-x7.jpg'),
+(4, 'Mahindra XUV 700', 'Petrol', 7, 5000, 'YES', 'images/xuv-700.jpg'),
+(5, 'Toyota Fortuner', 'Diesel', 7, 8000, 'YES', 'images/Fortuner_TRD.jpg'),
+(6, 'Ford Endeavour', 'Diesel', 7, 12000, 'YES', 'images/endeavour_sport.jpg'),
+(7, 'Toyota Innova', 'Petrol', 7, 6000, 'YES', 'images/innova-crysta.jpg'),
+(8, 'Suzuki Swift', 'Petrol', 5, 3000, 'YES', 'images/swift.jpg'),
+(9, 'Range Rover Velar', 'Petrol', 5, 14000, 'YES', 'images/range-rover-velar.jpg'),
+(10, 'Ford Mustang', 'Petrol', 4, 18000, 'YES', 'images/mustang.jpg'),
+(11, 'Suzuki Eeco', 'CNG', 9, 2500, 'YES', 'images/eeco.jpg'),
+(1, 'Tata Harrier', 'Diesel', 5, 7000, 'YES', 'images/harrier.jpg'),
+(12, 'Mahindra Scorpio N', 'Petrol', 7, 8000, 'YES', 'images/scorpio.jpg');
 
 -- --------------------------------------------------------
 
@@ -185,7 +195,7 @@ ALTER TABLE `bookings`
 -- AUTO_INCREMENT for table `cars`
 --
 ALTER TABLE `cars`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `users`
 --
