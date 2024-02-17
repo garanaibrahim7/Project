@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Background Image JSP Page</title>
-    <link  rel="stylesheet" href="../CSS/style.css">
+    <title>Admin - Rapid Drives</title>
+    <link  rel="stylesheet" href="CSS/style.css">
 	<style>
         body{
 		    width: 100%;
@@ -53,16 +53,25 @@
     <div class="hai">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">Rapid Drives</h2>
+                <a href="bookings.jsp"><h2 class="logo">Rapid Drives</h2></a>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="home.jsp">VEHICLE MANAGEMANT</a></li>
-                    <li><a href="aboutus.jsp">USERS</a></li>
+                    <li><a href="all_cars.jsp">VEHICLE MANAGEMANT</a></li>
+                    <li><a href="users.jsp">USERS</a></li>
                     <li><a href="bookings.jsp">BOOKING REQUEST</a></li>
-                    <li><a href="contactus.jsp">FEEDBACKS</a></li>
+                    <li><a href="feedbacks.jsp">FEEDBACKS</a></li>
                     
-                  <li> <button class="adminbtn"><a href="logout.php">LOG OUT</a></button></li>
+                  <%
+                    	if(session.getAttribute("admin") != null) {
+                    %>
+                  <li> <button class="adminbtn"><a href="logout.jsp">LOG OUT</a></button></li>
+                  	<%
+                    	}else{ 
+                    %>
+                  <li> <button class="adminbtn"><a href="login.jsp">LOG IN</a></button></li>
+                    <%	}
+                  	%>
                 </ul>
             </div>
             

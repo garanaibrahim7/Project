@@ -29,7 +29,7 @@
 			int i = ps.executeUpdate();
 			
 			if(i>0){
-				response.sendRedirect("home.jsp");
+				response.sendRedirect("index.jsp");
 				session.setAttribute("email", email);
 			}
 		} catch(Exception e) {

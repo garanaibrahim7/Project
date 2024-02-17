@@ -21,7 +21,7 @@
 		
 		if(i>0){
 			%> <script>alert("Thanks for Your Valueable Feedback :)")
-			window.location.href = "home.jsp"; </script>
+			window.location.href = "index.jsp"; </script>
 		<%}
 	} catch(Exception e) {
 		out.print(e);

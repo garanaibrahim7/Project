@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file="connection.jsp" %>
+<%@ include file="../connection.jsp" %>
 	<%
 		String email = request.getParameter("email");
 		String pw = request.getParameter("pass");
@@ -17,15 +17,15 @@
 		
 		try {
 			st=con.createStatement();
-			rs=st.executeQuery("select *from users where email='"+email+"' and pw='"+pw+"'");
+			rs=st.executeQuery("select *from admins where email='"+email+"' and password='"+pw+"'");
 			
 			if(rs.next()) {
-				response.sendRedirect("index.jsp");				
-				session.setAttribute("email", rs.getString("email"));
+				response.sendRedirect("bookings.jsp");				
+				session.setAttribute("admin", rs.getString("email"));
 			}
 			else {
 				%> <script>alert("Incorrect email or Password")
-							window.location.href = "login.jsp";
+							window.location.href = "index.jsp";
 				</script><%
 				//response.sendRedirect("login.jsp");				
 			}

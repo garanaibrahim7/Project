@@ -8,9 +8,9 @@
 </head>
 <body>
 <%
-		session.removeAttribute("email");
+		session.removeAttribute("admin");
 		session.invalidate();
-		response.sendRedirect("logout_done.jsp");
+		response.sendRedirect("index.jsp");
 	%>
 </body>
 </html>

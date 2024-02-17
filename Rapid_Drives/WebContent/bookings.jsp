@@ -3,23 +3,35 @@
 <head>
 	<style>
 		.main{
-	    	width: 500px;
+			text-align: center;		    
+		    padding: 20px;
+		    box-sizing: border-box;
+		    background: #fff;
+		    border-radius: 4px;
+		    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+		    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);		    
+		    align-content: center;
+		    width: 500px;
 		    height: 150px;
-		    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-		    position: absolute;
+		    margin-top: 60px;
+		    margin-left: 520px;
+		    border-radius: 10px;	    	
 		    top:150px;
 		    left: 480px;
-		    border-radius: 10px;
-		    padding: 20px;
 		    color: white;
-		    font-size: 12px;
+		    font-size: 10px;
 		    font-family: Arial;
+		}
+		.heading{
+			text-align: center;
+			font-size: 40px;
+		    margin-top: 40px;
 		}
 	</style>
 </head>
 
 <body>
-
+<div><h1 class="heading">YOUR BOOKINGS</h1>
 <% 
 
 if(session.getAttribute("email") != null) {

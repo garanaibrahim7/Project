@@ -7,15 +7,11 @@
 
 </head>
 
-
-
-
-</head>
 <body>
     <div class="hai">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">Rapid Drives</h2>
+                <a href="home.jsp"><h2 class="logo">Rapid Drives</h2></a>
             </div>         
         </div>
     </div>
